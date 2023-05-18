@@ -64,12 +64,20 @@ Format this text as code.
 
 ```
 def foo():
-if not bar:
-return True
+
+    if not bar:
+
+        return True
 ```
 
 ![An image of kismet, a robot head that recognises and simulates emotions](https://upload.wikimedia.org/wikipedia/commons/0/03/Kismet-IMG_6007-black.jpg)
 
-| Number    | Color        | Size        |
-|-----------|--------------|-------------|
-| 3         | Green        | Large       |
+|  Number    |   Color      |   Size       |
+|---:|:--- |:----: |
+|  3         |   Green      |   Large      |
+
+```
+def my_function():
+
+    print("Hello from a function")
+```
