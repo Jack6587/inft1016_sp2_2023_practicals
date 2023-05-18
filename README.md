@@ -32,13 +32,13 @@ Here's an unordered list, with:
 
 - One item
 
-* Two item
-
-+ Three item
-
 - <sub> Sub-item one!</sub>
 
+* Two item
+
 * <sub> Sub-item two!</sub>
+
++ Three item
 
 # This is a large heading. 
 
