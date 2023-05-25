@@ -16,9 +16,9 @@
     <table border="1" cellspacing="5" cellpadding="5">
         <thead>
           <tr>
-            <th>Number</th>
-            <th>Colour</th>
-            <th>Size</th>
+            <th ALIGN=RIGHT>Number</th>
+            <th ALIGN=LEFT>Colour</th>
+            <th ALIGN=CENTER>Size</th>
           </tr>
         </thead>
         <tbody>
