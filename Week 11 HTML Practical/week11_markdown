@@ -22,10 +22,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr ALIGN=CENTER>
             <td>12</td>
             <td>Green</td>
-            <td>Large</td>
+            <td ALIGN=CENTER>Large</td>
           </tr>
         </tbody>
       </table>
