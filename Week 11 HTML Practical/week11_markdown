@@ -1,1 +1,14 @@
+<html>
+    <head>
+        <title>IT Fundamentals</title>
+   </head>
+<body>
+    <p>Student Details</p>
 
+    <li>Jack Klenke</li>
+    <li>Student ID: 1103494373</li>
+    <li>klejt002@mymail.unisa.edu.au</li>
+    <li>Degree: Software Engineering</li>
+
+</body>
+</html>
