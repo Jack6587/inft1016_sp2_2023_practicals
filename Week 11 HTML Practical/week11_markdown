@@ -11,7 +11,24 @@
     <li>Degree: Software Engineering</li>
 
     <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Kismet-IMG_6007-black.jpg/800px-Kismet-IMG_6007-black.jpg" title="Kismet-IMG_6007-black" border="20" align="left" /> An image of kismet the humanoid robot.</p>
-    <a href="https://commons.wikimedia.org/wiki/File:Kismet-IMG_6007-black.jpg">Image of the kismet</a>
+    <a href="https://commons.wikimedia.org/wiki/File:Kismet-IMG_6007-black.jpg">Image of kismet the robot</a>
+
+    <table border="1" cellspacing="5" cellpadding="5">
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Colour</th>
+            <th>Size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12</td>
+            <td>Green</td>
+            <td>Large</td>
+          </tr>
+        </tbody>
+      </table>
 
 </body>
 </html>
