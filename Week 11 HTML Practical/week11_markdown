@@ -22,9 +22,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr ALIGN=CENTER>
-            <td>12</td>
-            <td>Green</td>
+          <tr>
+            <td ALIGN=RIGHT>12</td>
+            <td ALIGN=LEFT>Green</td>
             <td ALIGN=CENTER>Large</td>
           </tr>
         </tbody>
