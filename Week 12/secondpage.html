@@ -26,8 +26,15 @@
    }
    
    p:first-of-type {
-  font: 1.17em/1.33 Verdana, sans-serif;
+      font: 1.17em/1.33 Verdana, sans-serif;
+      text-indent: 0em;
 }
+   
+   p + p {
+      text-indent: 5em;
+   }
+  /* this selects p tags preceded by a p tag --
+     that is, not the first p tag */
 
 </style>
 </head>
