@@ -15,15 +15,28 @@
   --c-green:                 rgb(133, 153, 0);
 }
 
+
 body {
+  background-color: var(--c-background-color);
   color: var(--base-font-color);
 }
 
-h1 {
-  color: var(--secondary-font-color);
+header,
+footer {
+  background-color: var(--c-background-highlights);
+  color: var(--base-font-color);
 }
 
-.button {
-  background-color: var(--c-background-color);
-  color: var(--c-green);
+main,
+footer,
+header {
+  color: var(--base-font-color);
+}
+
+article a {
+  color: var(--c-magenta);
+}
+
+article a:hover {
+  color: var(--c-orange);
 }
