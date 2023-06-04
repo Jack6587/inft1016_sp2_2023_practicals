@@ -40,3 +40,7 @@ article a {
 article a:hover {
   color: var(--c-orange);
 }
+
+border-style {
+  color: var(--c-cyan);
+}
