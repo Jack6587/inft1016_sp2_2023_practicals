@@ -41,6 +41,13 @@ article a:hover {
   color: var(--c-orange);
 }
 
-border-style {
-  color: var(--c-cyan);
+section {
+  border: 3px solid var(--c-cyan);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom: 3px solid var(--c-cyan);
+  padding-bottom: 5px;
 }
