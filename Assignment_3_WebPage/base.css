@@ -57,3 +57,8 @@ header {
 
 [data-theme="dark"] {
      --primary-color: rgb(0, 0, 0);
+  
+ myimage {
+  width: 200px; /* Set the desired width */
+  height: auto;
+  }
