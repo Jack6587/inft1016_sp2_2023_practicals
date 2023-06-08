@@ -1,15 +1,16 @@
 <html>
 <head>
     <title>Week 13</title>
-    <img src="http://www.outgrabe.net/cat01.jpg" />
-    <script>
+    <img src="http://www.outgrabe.net/cat01.jpg" onmouseover="this.src='http://www.outgrabe.net/cat02.jpg'" onmouseout="this.src='http://www.outgrabe.net/cat01.jpg'"/>
+    
+      <script>
         counter = 0;
 
         function countClicks(element) {
             counter = counter + 1;
             var output = 'The link was pressed ' + counter + ' times.';
             element.innerHTML = output;
-            onmouseover="this.src='http://www.outgrabe.net/cat02.jpg'"
+      
         }
     </script>
 
