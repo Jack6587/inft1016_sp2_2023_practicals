@@ -16,22 +16,17 @@
      --bg-color: rgb(47, 79, 79);
      --font-color: rgb(248, 248, 255);
      --heading-color: rgb(100, 149, 237);
- }
+}
 
 body {
-  background-color: var(--secondary-color);
-  color: var(--font-color:);
-}
+  background-color: var(--bg-color);
+  color: var(--font-color);
 
 header,
-footer {
-  color: var(--font-color:);
-}
-
-main,
 footer,
-header {
-  color: var(--font-color:);
+main,
+article {
+  color: var(--font-color);
 }
 
 article a {
@@ -55,14 +50,8 @@ h2 {
 
 header {
   text-align: center;
-}
-
-header {
   font-size: 150%;
 }
-
-[data-theme="dark"] {
-     --primary-color: rgb(0, 0, 0);
   
  myimage {
   width: 200px; /* Set the desired width */
