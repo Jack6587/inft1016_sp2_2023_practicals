@@ -8,16 +8,27 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="base.css" id="myimage">
     
-    <script></script>
-    
   </head>
   
-  <body>
+  <body data-theme="light">
     
     <header>
     <h1>IT Fundamentals - Web Page</h1>
-      <button onclick="">Toggle Theme</button>
       </header>
+    
+    <button onclick="">Toggle Theme</button>
+    
+    <script>function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
     
   <img src="covr-image-50_result.webp">
   <p>Mobile application development is the process of creating software applications that run on a mobile device, such as a phone or a tablet. This application would typically require a network connection to operate with the correct resources. This job involves the use of code, binaries and assets as well as application testing on the targeted devices. </p>
