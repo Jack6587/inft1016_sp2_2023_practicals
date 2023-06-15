@@ -3,11 +3,8 @@
   --primary-color:           rgb(255, 255, 255);
   --secondary-color:         rgb(88, 110, 117);
   --bg-color:                rgb(0, 43, 54);
-  --c-background-highlights: rgb(7, 54, 66);
   --font-color:              rgb(131, 148, 150);
   --heading-color:           rgb(42, 161, 152);
-  --c-magenta:               rgb(211, 54, 130);
-  --c-orange:                rgb(203, 75, 22);
 }
 
 [data-theme="dark"] {
@@ -30,11 +27,11 @@ article {
 }
 
 article a {
-  color: var(--c-magenta);
+  color: var(--font-color);
 }
 
 article a:hover {
-  color: var(--c-orange);
+  color: var(--heading-color);
 }
 
 section {
