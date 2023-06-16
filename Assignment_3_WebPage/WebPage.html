@@ -12,9 +12,6 @@
   
   <body data-theme="light">
     
-    <img id="defaultimage" src="https://openverse.org/image/f1230075-5ab6-45c3-a027-87bf0874a714?q=trees" alt="tree image">
-    <p id="caption">"Corfu - Sept 2005 - Ancient Olive Trees" by Gareth1953 All Right Now is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p>
-
     <header>
     <h1>IT Fundamentals - Web Page</h1>
       </header>
@@ -33,7 +30,21 @@
         }
     </script>
     
-  <img src="covr-image-50_result.webp">
+  <img id="defaultimage" src="https://openverse.org/image/f1230075-5ab6-45c3-a027-87bf0874a714?q=trees" alt="tree image">
+  <p id="caption">"Corfu - Sept 2005 - Ancient Olive Trees" by Gareth1953 All Right Now is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p>
+  <button onclick="image_switch('https://openverse.org/image/e2049614-f186-4d07-819a-c96028b0d007?q=trees', 'Famous Japanese Garden Tree in Portland by Michael Matti')">Japanese Gardenn Tree</button>
+  <button onclick="image_switch('https://openverse.org/image/bc3938ee-5cdd-48f5-a808-a8d441904bd3?q=trees', 'Ceiba Tree by LollyKnit')">Ceiba Tree</button>
+  <button onclick="image_switch('https://openverse.org/image/f1230075-5ab6-45c3-a027-87bf0874a714?q=trees', 'Corfu - Sept 2005 - Ancient Olive Trees by Gareth1953 All Right Now')">Ancient Olive Trees</button>
+  <button onclick="image_switch('https://openverse.org/image/b7313e95-498b-4917-9a2b-7fd50f072bfe?q=trees', 'Palm tree by F H Mira')">Palm tree</button>
+  <button onclick="image_switch('https://openverse.org/image/752085e7-81bb-473c-a0fc-2f19fa977345?q=mangrove', 'Mangrove by Brisbane City Council')">Mangroves</button>
+ 
+  <script>
+  function image_switch(url, caption) {
+    document.getElementById('defaultimage').src = url;
+    document.getElementById('caption').innerText = caption;
+}
+    </script>
+    
   <p>Mobile application development is the process of creating software applications that run on a mobile device, such as a phone or a tablet. This application would typically require a network connection to operate with the correct resources. This job involves the use of code, binaries and assets as well as application testing on the targeted devices. </p>
   
     <nav>
