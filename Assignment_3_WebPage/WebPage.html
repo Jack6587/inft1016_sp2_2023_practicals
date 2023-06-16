@@ -28,6 +28,17 @@
                 body.setAttribute('data-theme', 'dark');
             }
         }
+      
+    </script>
+    
+    <p id="dateTimeParagraph"></p>
+
+    <script>
+        window.onload = function() {
+            const dateTimeParagraphElement = document.getElementById('dateTimeParagraph');
+            const currentDateTime = new Date();
+            dateTimeParagraphElement.innerText = currentDateTime.toLocaleString();
+        }
     </script>
     
     <p></p>
