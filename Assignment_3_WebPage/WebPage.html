@@ -97,20 +97,21 @@
     }
  }
      
-  window.onload = function() {
+  function getQueryParam(name) {
     const params = new URLSearchParams(window.location.search);
-    const username = params.get("user_name");
+    return params.get(name);
+}
+
+  function updateHeadingFromQueryString() {
+    const username = getQueryParam("username");
+    
     if (username) {
       document.getElementById("greeting").innerText = "Hello, " + username;
     }
+  }
     
-    document.getElementById("name_form").addEventListener("submit", function(event) {
-      event.preventDefault();
+  window.onload = updateHeadingFromQueryString;
       
-      const username = document.getElementById("user_name").value;
-      window.location.search = "?user_name=${username}";
-    });
-};
       
   window.onload = function() {
       const dateTimeParagraphElement = document.getElementById('dateTimeParagraph');
