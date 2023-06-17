@@ -97,12 +97,20 @@
     }
  }
      
-  document.getElementById("name_form").addEventListener("submit", function(event) {
-      event.preventDefault();
-        
-      var username = document.getElementById("user_name").value;
+  window.onload = function() {
+    const params = new URLSearchParams(window.location.search);
+    const username = params.get("user_name");
+    if (username) {
       document.getElementById("greeting").innerText = "Hello, " + username;
- });
+    }
+    
+    document.getElementById("name_form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const username = document.getElementById("user_name").value;
+      window.location.search = "?user_name=${username}";
+    });
+};
       
   window.onload = function() {
       const dateTimeParagraphElement = document.getElementById('dateTimeParagraph');
