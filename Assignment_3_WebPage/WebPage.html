@@ -97,27 +97,17 @@
     }
  }
      
-document.getElementById("name_form").addEventListener("submit", function(event){
-    event.preventDefault();
-    const username = document.getElementById("user_name").value;
-    window.location.href = window.location.pathname + "?username=" + username;
-});
-
-function get_parameter_by_name(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-
 window.onload = function() {
-    const username = get_parameter_by_name('username');
-    if (username) {
-        document.getElementById("greeting").innerText = "Hello, " + username;
+    if (localStorage.getItem("username")) {
+        document.getElementById("greeting").innerText = "Hello, " + localStorage.getItem("username");
     }
+
+    document.getElementById("name_form").addEventListener("submit", function(event){
+        event.preventDefault();
+        const username = document.getElementById("user_name").value;
+        document.getElementById("greeting").innerText = "Hello, " + username;
+        localStorage.setItem("username", username);
+    });
 };
       
       
