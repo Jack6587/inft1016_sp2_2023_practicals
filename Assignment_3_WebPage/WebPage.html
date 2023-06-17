@@ -17,43 +17,16 @@
       </header>
     
     <button onclick="toggleTheme()">Toggle Theme</button>
-    
-    <script>function toggleTheme() {
-            const body = document.body;
-            const currentTheme = body.getAttribute('data-theme');
-
-            if (currentTheme === 'dark') {
-                body.setAttribute('data-theme', 'light');
-            } else {
-                body.setAttribute('data-theme', 'dark');
-            }
-      }
-      
-    </script>
+   
     <p></p>
+    
     <form id="name_form">
        <input type="text" id="user_name" placeholder="Enter your name!">
        <button type="submit">Apply!</button>
     </form>
-    <h2 id="greeting">Hello, User</h2>
-    
-    <script>
-      document.getElementById("name_form").addEventListener("submit", function(event) {
-        event.preventDefault();
-        
-        var username = document.getElementById("user_name").value;
-        document.getElementById("greeting").innerText = "Hello, " + username;
-      });
-    </script>
+    <h3 id="greeting">Hello, User</h3>
     
     <p id="dateTimeParagraph"></p>
-    <script>
-        window.onload = function() {
-            const dateTimeParagraphElement = document.getElementById('dateTimeParagraph');
-            const currentDateTime = new Date();
-            dateTimeParagraphElement.innerText = currentDateTime.toLocaleString();
-        }
-    </script>
     
     <p></p>
   <img id="defaultimage" src="https://live.staticflickr.com/2426/3795866926_834c167b24_b.jpg" alt="tree image">
@@ -64,13 +37,6 @@
   <button onclick="image_switch('https://live.staticflickr.com/3118/2431912955_f1efb765aa_b.jpg', 'Palm tree by F H Mira')">Palm tree</button>
   <button onclick="image_switch('https://live.staticflickr.com/7099/6968551938_8960080fd9_b.jpg', 'Mangrove by Brisbane City Council')">Mangroves</button>
  
-  <script>
-  function image_switch(url, caption) {
-    document.getElementById('defaultimage').src = url;
-    document.getElementById('caption').innerText = caption;
-}
-    </script>
-    
   <p>Mobile application development is the process of creating software applications that run on a mobile device, such as a phone or a tablet. This application would typically require a network connection to operate with the correct resources. This job involves the use of code, binaries and assets as well as application testing on the targeted devices. </p>
   
     <nav>
@@ -118,6 +84,38 @@
     <footer>      
       <p>©Copyright 2050 by nobody. All rights reversed.</p>    
     </footer>  
+    
+    <script> 
+   function toggleTheme() {
+      const body = document.body;
+      const currentTheme = body.getAttribute('data-theme');
+
+      if (currentTheme === 'dark') {
+         body.setAttribute('data-theme', 'light');
+    } else {
+         body.setAttribute('data-theme', 'dark');
+    }
+ }
+     
+  document.getElementById("name_form").addEventListener("submit", function(event) {
+      event.preventDefault();
+        
+      var username = document.getElementById("user_name").value;
+      document.getElementById("greeting").innerText = "Hello, " + username;
+ });
+      
+  window.onload = function() {
+      const dateTimeParagraphElement = document.getElementById('dateTimeParagraph');
+      const currentDateTime = new Date();
+      dateTimeParagraphElement.innerText = currentDateTime.toLocaleString();
+}
+      
+  function image_switch(url, caption) {
+    document.getElementById('defaultimage').src = url;
+    document.getElementById('caption').innerText = caption;
+}
+      
+    </script>
     
   </body>
 </html>
