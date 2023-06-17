@@ -27,12 +27,25 @@
             } else {
                 body.setAttribute('data-theme', 'dark');
             }
-        }
+      }
       
     </script>
     
+    <form id="name_form">
+       <input type="text" name="user_name" placeholder="Enter your name!">
+       <button type="submit">Apply!</button>
+    </form>
+    
+    <script>
+      document.getElementById("name_form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        var username = document.getElementById("username").value;
+        document.getElementById("greeting").innerText = "Hello, " + username;
+      });
+    </script>
+    
     <p id="dateTimeParagraph"></p>
-
     <script>
         window.onload = function() {
             const dateTimeParagraphElement = document.getElementById('dateTimeParagraph');
@@ -67,11 +80,6 @@
       <li><a href="#">Development process</a></li>        
       <li><a href="#">How it can impact the real world</a></li>      
     </ul>
-
-     <form>
-       <input type="text" name="user_name" placeholder="Enter your name!">
-       <button type="submit">Apply!</button>
-    </form>
       
    </nav>
     
