@@ -15,14 +15,12 @@
      --heading-color: rgb(100, 149, 237);
 }
 
-body {
-  background-color: var(--bg-color);
-  color: var(--font-color);
-
+body,
 header,
 footer,
 main,
 article {
+  background-color: var(--bg-color);
   color: var(--font-color);
 }
 
@@ -50,7 +48,7 @@ header {
   font-size: 150%;
 }
   
- defaultimage {
+defaultimage {
   width: 200px; /* Set the desired width */
   height: auto;
   }
