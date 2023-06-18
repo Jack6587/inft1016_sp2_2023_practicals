@@ -1,45 +1,47 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8"> 
+<!DOCTYPE html> <!-- Declares document type -->
+<html> <!-- Opening code for the HTML -->
+  <head> <!--Provides information such as the title and details such as links or referral code (such as base.css -->
+    <meta charset="utf-8"> <!-- Tells the browser to use utf-8 character encoding to translate machine code -->
     
-    <title>Web Page - Jack Klenke</title>
+    <title>Web Page - Jack Klenke</title> <!-- Provides the title of the page to the user when opened. This one is displayed in the tab rather than on the screenn -->
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="base.css"> <!-- These lines provide the styling information for the website to use - the CSS file used for display, and the font -->
     
-  </head>
+  </head> <!-- Closes the <head> section of the HTML file -->
   
-  <body data-theme="dark">
+  <body data-theme="dark"> <!-- This is the beginning of the body of the page, but also where the initial theme is set as seen by "data-theme" -->
     
-    <header>
-    <h1>IT Fundamentals - Web Page</h1>
-      </header>
+    <header> <!-- This is the main header of the web page -->
+    <h1>IT Fundamentals - Web Page</h1> <!-- The main title. Used as "h1" as the most important/main heading-->
+      </header> <!-- Closing of the main header -->
     
-    <button onclick="toggleTheme()">Toggle Theme</button>
+    <button onclick="toggleTheme()">Toggle Theme</button> <!-- As seen by "button", this is a button that utilises the "toggleTheme" function to operate. Changes the theme of the page, and is situated at the top-->
    
-    <p></p>
+    <p></p> <!-- For spacing -->
     
-    <form id="name_form">
-       <input type="text" id="user_name" placeholder="Enter your name!">
-       <button type="submit">Apply!</button>
-    </form>
-    <h3 id="greeting">Hello, User</h3>
+    <form id="name_form"> <!-- Used for user input. This creates the form -->
+       <input type="text" id="user_name" placeholder="Enter your name!"> <!-- Creates the identification for the user's input, and the intial text provided in the text box. This identification is used for a JavaScript function to operate correctly -->
+       <button type="submit">Apply!</button> <!-- Displays the button and what is inside of it. In this case, "Apply!" -->
+    </form> <!-- Closes the form -->
+    <h3 id="greeting">Hello, User</h3> <!-- This "greeting" sits just below the input box. It displays whatever the input is to the screen when the button is clicked -->
     
-    <p id="dateTimeParagraph"></p>
+    <p id="dateTimeParagraph"></p> <!-- This paragraph displays the date and time to the user. Functions with the help of JavaScript, this is just used for display. -->
     
-    <p></p>
-  <img id="defaultimage" src="https://live.staticflickr.com/2426/3795866926_834c167b24_b.jpg" alt="tree image">
-  <p id="caption">Corfu - Sept 2005 - Ancient Olive Trees by Gareth1953 All Right Now is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p>
-  <button onclick="image_switch('https://api.openverse.engineering/v1/images/e2049614-f186-4d07-819a-c96028b0d007/thumb/', 'Famous Japanese Garden Tree in Portland by Michael Matti')">Japanese Garden Tree</button>
-  <button onclick="image_switch('https://live.staticflickr.com/1227/1155226271_39aa31cf4d_b.jpg', 'Ceiba Tree by LollyKnit')">Ceiba Tree</button>
-  <button onclick="image_switch('https://live.staticflickr.com/2426/3795866926_834c167b24_b.jpg', 'Corfu - Sept 2005 - Ancient Olive Trees by Gareth1953')">Ancient Olive Trees</button>
-  <button onclick="image_switch('https://live.staticflickr.com/3118/2431912955_f1efb765aa_b.jpg', 'Palm tree by F H Mira')">Palm tree</button>
-  <button onclick="image_switch('https://live.staticflickr.com/7099/6968551938_8960080fd9_b.jpg', 'Mangrove by Brisbane City Council')">Mangroves</button>
- 
+    <p></p> <!-- For spacing -->
+    
+    
+  <img id="defaultimage" src="https://live.staticflickr.com/2426/3795866926_834c167b24_b.jpg" alt="tree image"> <!-- This section provides the images seen with buttons, which change both the image and caption to its corresponding button. -->
+  <p id="caption">Corfu - Sept 2005 - Ancient Olive Trees by Gareth1953 All Right Now is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p> <!-- Provides the initial caption for the default image loaded. -->
+  <button onclick="image_switch('https://api.openverse.engineering/v1/images/e2049614-f186-4d07-819a-c96028b0d007/thumb/', 'Famous Japanese Garden Tree in Portland by Michael Matti')">Japanese Garden Tree</button> <!-- Button with an "onclick" function for the Japanese Garden Tree -->
+  <button onclick="image_switch('https://live.staticflickr.com/1227/1155226271_39aa31cf4d_b.jpg', 'Ceiba Tree by LollyKnit')">Ceiba Tree</button> <!-- Button and details that operates the same way, for the Ceiba Tree -->
+  <button onclick="image_switch('https://live.staticflickr.com/2426/3795866926_834c167b24_b.jpg', 'Corfu - Sept 2005 - Ancient Olive Trees by Gareth1953')">Ancient Olive Trees</button> <!-- Button and details for the Ancient Olive Trees -->
+  <button onclick="image_switch('https://live.staticflickr.com/3118/2431912955_f1efb765aa_b.jpg', 'Palm tree by F H Mira')">Palm tree</button> <!-- Button and details for palm tree -->
+  <button onclick="image_switch('https://live.staticflickr.com/7099/6968551938_8960080fd9_b.jpg', 'Mangrove by Brisbane City Council')">Mangroves</button> <!-- Button and details for mangroves -->
+  
+  <!-- This below code provides the formatting and key information for the webpage based on Assignments 1 and 2, including a list with each of the paragraphs in the text -->
   <p>Mobile application development is the process of creating software applications that run on a mobile device, such as a phone or a tablet. This application would typically require a network connection to operate with the correct resources. This job involves the use of code, binaries and assets as well as application testing on the targeted devices. </p>
   
-    <nav>
       
     <ul>        
       <li><a href="#">Home</a></li>        
@@ -50,8 +52,7 @@
       <li><a href="#">Solving problems in the real world
       
     </ul>
-      
-   </nav>
+
     
     <main>
       
@@ -141,4 +142,4 @@ window.onload = function() {
     </script>
     
   </body>
-</html>
+</html> <!-- Closing code for the HTML -->
