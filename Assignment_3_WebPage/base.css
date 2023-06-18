@@ -48,7 +48,7 @@ header {
   font-size: 150%;
 }
   
-defaultimage {
+#defaultimage {
   width: 200px; /* Set the desired width */
   height: auto;
   }
