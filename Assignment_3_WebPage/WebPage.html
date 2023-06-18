@@ -92,8 +92,10 @@
 
       if (currentTheme === 'dark') {
          body.setAttribute('data-theme', 'light');
+        localStorage.setItem("theme", 'light');
     } else {
          body.setAttribute('data-theme', 'dark');
+      localStorage.setItem("theme", 'dark');
     }
  }
      
@@ -110,9 +112,11 @@ window.onload = function() {
     });
       
       const dateTimeParagraphElement = document.getElementById('dateTimeParagraph');
-      const currentDateTime = new Date();
-      dateTimeParagraphElement.innerText = currentDateTime.toLocaleString();
-    }
+      setInterval(function() {
+        const currentDateTime = new Date();
+        dateTimeParagraphElement.innerText = currentDateTime.toLocaleString();
+      }, 1000);
+    };
       
   function image_switch(url, caption) {
     document.getElementById('defaultimage').src = url;
