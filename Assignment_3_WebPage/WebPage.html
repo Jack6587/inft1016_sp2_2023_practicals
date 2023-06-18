@@ -96,52 +96,52 @@
     
     <script> // The script part of the HTML is used for any code such as JavaScript/CSS - this is known as in-line code
    function toggle_theme() { // This defines a function referred to as "toggle_theme", designed for the theme change on the page
-      const body = document.body;
-      const currentTheme = body.getAttribute('data-theme');
+      const body = document.body; // This section assigns the "body" element of written HTML to a "constant" variable called body
+      const user_theme = body.getAttribute('data-theme'); // Obtains the theme from the body element. It is then assigned to a "constant" variable called user_theme
 
-      if (currentTheme === 'dark') {
-         body.setAttribute('data-theme', 'light');
-         localStorage.setItem("theme", 'light');
-    } else {
-         body.setAttribute('data-theme', 'dark');
-         localStorage.setItem("theme", 'dark');
+      if (user_theme === 'dark') { // This "if" statement checks if the theme is dark
+         body.setAttribute('data-theme', 'light'); // If it is, it sets it to light
+         localStorage.setItem("theme", 'light'); // This code saves the preference to "localStorage"
+    } else { // Else: the situation where "if" does not apply, so when it is not set to dark
+         body.setAttribute('data-theme', 'dark'); // In this case, it changes it to dark
+         localStorage.setItem("theme", 'dark'); // This does the same thing as above, stores the user's preference to "localStorage"
     }
  }
      
-window.onload = function() {
-    if (localStorage.getItem("username")) {
-        document.getElementById("greeting").innerText = "Hello, " + localStorage.getItem("username");
+window.onload = function() { // This function occurs when the page has been loaded
+    if (localStorage.getItem("username")) { // This if statement checks to see if there is an item in "username"
+        document.getElementById("greeting").innerText = "Hello, " + localStorage.getItem("username"); // If this is the case, it changes the text in the HTML to the name found in storage. This way, it is saved when any user is to refresh or reopen the page
     }
   
-    const stored_theme = localStorage.getItem("theme")
-    const body = document.body;
+    const stored_theme = localStorage.getItem("theme") // This assigns a constant ("const") variable called stored_theme to the theme found in "localStorage"
+    const body = document.body; // This gives the HTML body area a constant variable called "body"
   
-    if (stored_theme) {
-      body.setAttribute('data-theme', stored_theme);
-    } else {
-      body.setAttribute('data-theme', 'dark');
+    if (stored_theme) { // This if scenario runs if there is a stored theme found
+      body.setAttribute('data-theme', stored_theme); // It sets the theme to the stored_theme variable
+    } else { // In the case that there isn't a stored theme:
+      body.setAttribute('data-theme', 'dark'); // Theme is set to dark
     }
 
-    document.getElementById("name_form").addEventListener("submit", function(event){
-        event.preventDefault();
-        const entered_name = document.getElementById("user_name").value;
-        document.getElementById("greeting").innerText = "Hello, " + entered_name;
-        localStorage.setItem("username", entered_name);
+    document.getElementById("name_form").addEventListener("submit", function(event){ // This adds what is called an event listener that listens for when the "name_form" is submitted (when the user enters a name)
+        event.preventDefault(); // This prevents the refreshing of the page when the user does this
+        const entered_name = document.getElementById("user_name").value; // This obtains the value from "user_name" and assigns it to the constant variable called entered_name
+        document.getElementById("greeting").innerText = "Hello, " + entered_name; // This modifies the text called "greeting" (which can be found at the top of the HTML portion of the code) to display the entered_name in place of "User"
+        localStorage.setItem("username", entered_name); // This remembers the entered name of the user in the local storage
     });
       
-      const dateTimeParagraphElement = document.getElementById('dateTimeParagraph');
-      setInterval(function() {
-        const currentDateTime = new Date();
-        dateTimeParagraphElement.innerText = currentDateTime.toLocaleString();
+      const date_time_element = document.getElementById('dateTimeParagraph'); // This portion involves the date and time display. The HTML line that has the ID "dateTimeParagraph" (seen on line 29) is assigned to a variable called date_time_element
+      setInterval(function() { // This sets an interval that repeats every second (displayed in milliseconds as seen below)
+        const current_date_time = new Date(); // This obtains the current time and date, and is assigned to a variable named current_date_time
+        date_time_element.innerText = current_date_time.toLocaleString(); // This sets the element to a string, for formatting purposes. For example, the "locale" portion takes into the account the location/language of the user to set the correct time
       }, 1000);
     };
       
-  function image_switch(url, caption) {
-    document.getElementById('defaultimage').src = url;
-    document.getElementById('caption').innerText = caption;
+  function image_switch(url, caption) { // This creates a function called image_switch. It is used to switch the image and caption interchangeably by the user
+    document.getElementById('defaultimage').src = url; // This changes the image that is displayed, by passing the attribute to the function
+    document.getElementById('caption').innerText = caption; // This does the same thing as above, but for the caption, which corresponds with the image
   }
       
-    </script>
+    </script> <!-- Ends the JavaScript portion of the code -->
     
-  </body>
+  </body> <!-- Ends the body portion of the HTML -->
 </html> <!-- Closing code for the HTML -->
