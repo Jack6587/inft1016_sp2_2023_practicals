@@ -1,13 +1,13 @@
 
-:root {
-  --primary-color:           rgb(255, 255, 255);
-  --secondary-color:         rgb(88, 110, 117);
+:root { /* This defines the variables used in this CSS file. This is the theme for "light" */
+  --primary-color:           rgb(255, 255, 255); /* Sets the primary colour */
+  --secondary-color:         rgb(88, 110, 117); /* Sets the secondary colour and so forth */
   --bg-color:                rgb(0, 43, 54);
   --font-color:              rgb(131, 148, 150);
   --heading-color:           rgb(42, 161, 152);
 }
 
-[data-theme="dark"] {
+[data-theme="dark"] { /* This defines the variables similarly to the :root section but for the dark theme. These are essentially opposites, or darker versions of the above colours */
      --primary-color: rgb(0, 0, 0);
      --secondary-color: rgb(112, 128, 144);
      --bg-color: rgb(47, 79, 79);
@@ -15,7 +15,7 @@
      --heading-color: rgb(100, 149, 237);
 }
 
-body,
+body, /* This apples the background colour to the body, header, footer, main and article sections of the HTML using the above defined variables */
 header,
 footer,
 main,
@@ -24,31 +24,31 @@ article {
   color: var(--font-color);
 }
 
-article a {
+article a { /* Sets the colour of text in article portions of the HTML */
   color: var(--font-color);
 }
 
-article a:hover {
+article a:hover { /* Applies to the same article portions, but when hovered over */
   color: var(--heading-color);
 }
 
-section {
+section { /* Provides a margin, border and padding to all "section" areas of the HTML */
   border: 3px solid var(--heading-color);
   padding: 10px;
   margin-bottom: 20px;
 }
 
-h2 {
+h2 { /* Provides padding and border with specifications to all "h2" portions */
   border-bottom: 3px solid var(--heading-color);
   padding-bottom: 5px;
 }
 
-header {
+header { /* Centers the header text on the webpage (the large title at the top) and increases the font size */
   text-align: center;
   font-size: 150%;
 }
   
-#defaultimage {
-  width: 200px; /* Set the desired width */
+#defaultimage { /* Sets width and height of image identified as "defaultimage". This can be seen on the webpage, as each image is much smaller (and fits on the page better) than it would be if not for this code */
+  width: 200px;
   height: auto;
   }
