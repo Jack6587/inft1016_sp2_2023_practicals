@@ -115,9 +115,9 @@ window.onload = function() {
 
     document.getElementById("name_form").addEventListener("submit", function(event){
         event.preventDefault();
-        const username = document.getElementById("user_name").value;
-        document.getElementById("greeting").innerText = "Hello, " + username;
-        localStorage.setItem("username", username);
+        const entered_name = document.getElementById("user_name").value;
+        document.getElementById("greeting").innerText = "Hello, " + entered_name;
+        localStorage.setItem("username", entered_name);
     });
       
       const dateTimeParagraphElement = document.getElementById('dateTimeParagraph');
