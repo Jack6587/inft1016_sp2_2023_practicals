@@ -25,11 +25,11 @@ article {
 }
 
 article a {
-  color: var(--primary-color);
+  color: var(--font-color);
 }
 
 article a:hover {
-  color: var(--secondary-color);
+  color: var(--heading-color);
 }
 
 section {
