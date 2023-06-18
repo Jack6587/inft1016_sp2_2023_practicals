@@ -92,16 +92,25 @@
 
       if (currentTheme === 'dark') {
          body.setAttribute('data-theme', 'light');
-        localStorage.setItem("theme", 'light');
+         localStorage.setItem("theme", 'light');
     } else {
          body.setAttribute('data-theme', 'dark');
-      localStorage.setItem("theme", 'dark');
+         localStorage.setItem("theme", 'dark');
     }
  }
      
 window.onload = function() {
     if (localStorage.getItem("username")) {
         document.getElementById("greeting").innerText = "Hello, " + localStorage.getItem("username");
+    }
+  
+    const stored_theme = localStorage.getItem("theme")
+    const body = document.body;
+  
+    if (stored_theme) {
+      body.setAttribute('data-theme', stored_theme);
+    } else {
+      body.setAttribute('data-theme', 'dark');
     }
 
     document.getElementById("name_form").addEventListener("submit", function(event){
